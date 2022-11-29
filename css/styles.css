@@ -152,14 +152,12 @@ body {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/backgroundhero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-
   height: 600px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+  max-width: 1600px;
 }
 
 .hero-title {
@@ -206,16 +204,16 @@ body {
 .advance-background {
   background-color: var(--gray-background-color);
   border-radius: 4px;
-
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .advance-icon {
   width: 70px;
   height: 70px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: 100px;
-  margin-right: 100px;
+
 }
 
 .advance:not(:last-child) {
@@ -288,7 +286,7 @@ body {
 
 .team-text {
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .nav-link:hover,
@@ -317,7 +315,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 .sm-item {
@@ -352,7 +350,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .co-list li:not(:last-child) {
@@ -405,17 +402,10 @@ body {
   width: 25%;
 }
 
-.sm-part {
-  width: 25%;
-  padding-top: 12px;
-}
-
 .wrap {
   display: flex;
-
-
+  align-items: baseline;
 }
-
 
 .footer-tytle-sm {
   font-weight: 700;
@@ -530,9 +520,13 @@ body {
   margin-right: 0px;
 }
 
-.service-list li:hover,
-.service-list li:focus,
-.service-list li:active {
+.service-link {
+  display: block;
+}
+
+.service-link:hover,
+.service-link:focus,
+.service-link:active {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
